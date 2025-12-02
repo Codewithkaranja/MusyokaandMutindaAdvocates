@@ -1,71 +1,99 @@
-// Mobile Menu Toggle
-      document
-        .querySelector(".mobile-menu")
-        .addEventListener("click", function () {
-          document.querySelector("nav ul").classList.toggle("active");
-        });
+// =========================
+// MOBILE MENU TOGGLE
+// =========================
+const mobileMenuBtn = document.querySelector(".mobile-menu");
+const mainNav = document.querySelector("nav");
 
-      // Form Submission
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+if (mobileMenuBtn && mainNav) {
+  // Toggle menu on hamburger click
+  mobileMenuBtn.addEventListener("click", () => {
+    mainNav.classList.toggle("active");
+    mobileMenuBtn.classList.toggle("open");
+  });
 
-          // In a real implementation, you would send the form data to a server here
-          // For this example, we'll just show an alert
-          alert(
-            "Thank you for your message! We will get back to you within 24 hours."
-          );
-          this.reset();
-        });
+  // Close menu when a link is clicked
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("active");
+      mobileMenuBtn.classList.remove("open");
+    });
+  });
+}
 
-      // FAQ Toggle
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const faqItem = question.parentElement;
-          const answer = faqItem.querySelector(".faq-answer");
+// =========================
+// CONTACT FORM SUBMISSION
+// =========================
+const contactForm = document.getElementById("contactForm");
 
-          // Close all other FAQ items
-          document.querySelectorAll(".faq-item").forEach((item) => {
-            if (item !== faqItem) {
-              item.classList.remove("active");
-              item.querySelector(".faq-answer").classList.remove("active");
-            }
-          });
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-          // Toggle current FAQ item
-          faqItem.classList.toggle("active");
-          answer.classList.toggle("active");
-        });
+    const firstName = document.getElementById("firstName").value;
+    const phone = document.getElementById("phone").value;
+
+    alert(
+      `Thank you ${firstName}! We have received your inquiry and will contact you at ${phone} within 24 hours.`
+    );
+
+    contactForm.reset();
+  });
+}
+
+// =========================
+// FAQ ACCORDION
+// =========================
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+    // Close other items
+    faqItems.forEach((other) => {
+      if (other !== item) other.classList.remove("active");
+    });
+    // Toggle current item
+    item.classList.toggle("active");
+  });
+});
+
+// =========================
+// SMOOTH SCROLLING
+// =========================
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    if (targetId === "#") return;
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 100,
+        behavior: "smooth",
       });
+    }
+  });
+});
 
-      // Smooth Scrolling for Anchor Links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
+// =========================
+// HEADER SCROLL EFFECT
+// =========================
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 60);
+});
 
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: "smooth",
-            });
-
-            // Close mobile menu if open
-            document.querySelector("nav ul").classList.remove("active");
-          }
-        });
-      });
-
-      // Header background on scroll
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 100) {
-          header.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
-        } else {
-          header.style.backgroundColor = "var(--white)";
-        }
-      });
+// =========================
+// METHOD CARD HOVER EFFECT
+// =========================
+document.querySelectorAll(".method-card").forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-10px)";
+  });
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0)";
+  });
+});
