@@ -1,25 +1,21 @@
 /* CSS Variables for Brand Colors - Enhanced Palette */
 :root {
   /* Core Brand Colors */
+
   --navy: #002b5c;
-  --charcoal: #2d3748;
-  --charcoal-light: #4a5568;
-  --gold: #d4af37;
-  --gold-light: #f6e05e;
-  --light-gray: #f7fafc;
+  --charcoal: #333333;
+  --gold: #b38b59;
+  --light-gray: #f8f9fa;
   --white: #ffffff;
+  --mutindagreen: #9D863F;
+  --mutindamaroon: rgb(119, 4, 4);
+  --mutindagreen-light: rgba(84, 102, 21, 0.1);
+  --mutindamaroon-light: rgba(119, 4, 4, 0.1);
+  --mutindagreen-dark: #9D853F;
+  --mutindamaroon-dark: rgb(95, 3, 3);
+  --gradient-primary: linear-gradient(135deg, var(--mutindamaroon), var(--mutindagreen));
+  --gradient-secondary: linear-gradient(135deg, var(--mutindagreen), var(--mutindagreen-dark));
 
-  /* Mutinda Green Variations */
-  --mutindagreen: #546615;
-  --mutindagreen-light: rgba(84, 102, 21, 0.15);
-  --mutindagreen-lighter: rgba(84, 102, 21, 0.08);
-  --mutindagreen-dark: #3a4a0f;
-
-  /* Mutinda Maroon Variations */
-  --mutindamaroon: #770404;
-  --mutindamaroon-light: rgba(119, 4, 4, 0.15);
-  --mutindamaroon-lighter: rgba(119, 4, 4, 0.08);
-  --mutindamaroon-dark: #5a0303;
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--mutindamaroon) 0%, var(--mutindagreen) 100%);

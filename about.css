@@ -1,16 +1,18 @@
 /* CSS Variables for Brand Colors */
 :root {
   --navy: #002b5c;
-  --charcoal: #141313;
+  --charcoal: #333333;
   --gold: #b38b59;
   --light-gray: #f8f9fa;
   --white: #ffffff;
-  --mutindagreen: rgb(84, 102, 21);
+  --mutindagreen: #9D863F;
   --mutindamaroon: rgb(119, 4, 4);
   --mutindagreen-light: rgba(84, 102, 21, 0.1);
   --mutindamaroon-light: rgba(119, 4, 4, 0.1);
-  --mutindagreen-dark: rgb(67, 82, 17);
+  --mutindagreen-dark: #9D853F;
   --mutindamaroon-dark: rgb(95, 3, 3);
+  --gradient-primary: linear-gradient(135deg, var(--mutindamaroon), var(--mutindagreen));
+  --gradient-secondary: linear-gradient(135deg, var(--mutindagreen), var(--mutindagreen-dark));
 }
 
 /* Global Styles */
@@ -624,7 +626,7 @@ nav ul li .btn:hover {
   height: 350px;
   overflow: hidden;
   position: relative;
-  background-color: var(--white);
+ 
 }
 
 .member-image::before {
