@@ -4,63 +4,114 @@
   <!-- Homepage -->
   <url>
     <loc>https://musyokamutindaadv.co.ke/index.html</loc>
-    <lastmod>2025-12-14</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- About Page -->
+  <!-- Core Pages -->
   <url>
     <loc>https://musyokamutindaadv.co.ke/about.html</loc>
-    <lastmod>2025-12-14</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Services Page -->
   <url>
     <loc>https://musyokamutindaadv.co.ke/services.html</loc>
-    <lastmod>2025-12-14</lastmod>
-    <priority>0.5</priority>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Blog Page -->
-  <url>
-    <loc>https://musyokamutindaadv.co.ke/blog.html</loc>
-    <lastmod>2025-12-14</lastmod>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Single Blog Post -->
-  <url>
-    <loc>https://musyokamutindaadv.co.ke/single-post.html</loc>
-    <lastmod>2025-12-14</lastmod>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Team Page -->
   <url>
     <loc>https://musyokamutindaadv.co.ke/team.html</loc>
-    <lastmod>2025-12-14</lastmod>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/contact.html</loc>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.7</priority>
   </url>
 
-  <!-- Individual Team Members (HIGH PRIORITY) -->
+  <!-- Blog Index -->
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/blog.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Individual Blog Articles -->
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/litigation-dispute-resolution-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/arbitration-mediation-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/corporate-commercial-law-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/conveyancing-real-estate-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/criminal-defense-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/employment-labour-law-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/family-succession-law-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/banking-insurance-law-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/constitutional-human-rights-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://musyokamutindaadv.co.ke/personal-injury-claims-machakos.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Individual Advocates (HIGH AUTHORITY PAGES) -->
   <url>
     <loc>https://musyokamutindaadv.co.ke/faith-musyoka.html</loc>
-    <lastmod>2025-12-16</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://musyokamutindaadv.co.ke/naomi-mutinda.html</loc>
-    <lastmod>2025-12-16</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Contact Page -->
-  <url>
-    <loc>https://musyokamutindaadv.co.ke/contact.html</loc>
-    <lastmod>2025-12-14</lastmod>
-    <priority>0.5</priority>
   </url>
 
 </urlset>
