@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://musyokamutindaadv.co.ke/sitemap.xml
